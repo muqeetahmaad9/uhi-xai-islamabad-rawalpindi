@@ -1,0 +1,16 @@
+variable,action,detail
+ndvi,kept (correlation step),
+bld_frac,kept (correlation step),
+bld_height,dropped (collinearity),rho=0.98 with bld_frac
+dw_bare,kept (correlation step),
+elev,kept (correlation step),
+slope,kept (correlation step),
+cos_incidence,kept (correlation step),
+dist_water,kept (correlation step),
+mndwi,dropped (collinearity),rho=-0.80 with ndvi
+dw_built,kept (correlation step),
+ndbi,kept (correlation step),
+bsi,dropped (collinearity),rho=0.90 with ndbi
+dw_trees,dropped (collinearity),rho=0.80 with ndvi
+dw_crops,kept (correlation step),
+ndbi,dropped (VIF),VIF=5.41

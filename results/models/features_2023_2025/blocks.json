@@ -1,0 +1,36 @@
+{
+  "period": "features_2023_2025",
+  "target": "lst",
+  "seed": 42,
+  "variogram_lst": {
+    "nugget": 1.8537683208125861,
+    "partial_sill": 5.326289533926657,
+    "practical_range_m": 36583.4380966686
+  },
+  "variogram_residual": {
+    "nugget": 0.6914696230728118,
+    "partial_sill": 0.9169445522910069,
+    "practical_range_m": 9717.618840490024
+  },
+  "block_size_m": 5000.0,
+  "block_size_rule": "residual practical range, rounded up to 500 m, clipped to (1000, 5000)",
+  "n_blocks": 135,
+  "n_test_blocks": 28,
+  "cells_by_split": {
+    "train": 241591,
+    "test": 70539
+  },
+  "cells_by_fold": {
+    "0": 50470,
+    "1": 49734,
+    "2": 47402,
+    "3": 47444,
+    "4": 46541
+  },
+  "test_share_by_class": {
+    "1_nonurban": 0.232,
+    "1_urban": 0.237,
+    "2_nonurban": 0.206,
+    "2_urban": 0.309
+  }
+}

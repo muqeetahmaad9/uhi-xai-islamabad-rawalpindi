@@ -1,0 +1,37 @@
+{
+  "features": [
+    "ndvi",
+    "bld_frac",
+    "dw_bare",
+    "elev",
+    "slope",
+    "cos_incidence",
+    "dist_water",
+    "dw_built",
+    "dw_crops"
+  ],
+  "target": "lst",
+  "n_train": 241591,
+  "n_test": 70539,
+  "n_tune": 60000,
+  "params": {
+    "lr": {},
+    "gam": {
+      "ridge__alpha": 0.1,
+      "splinetransformer__n_knots": 10
+    },
+    "rf": {
+      "max_features": 0.33,
+      "min_samples_leaf": 1
+    },
+    "xgb": {
+      "subsample": 0.6,
+      "reg_lambda": 5,
+      "n_estimators": 300,
+      "min_child_weight": 20,
+      "max_depth": 8,
+      "learning_rate": 0.02,
+      "colsample_bytree": 0.8
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "features": [
+    "ndvi",
+    "bld_frac",
+    "dw_bare",
+    "elev",
+    "slope",
+    "cos_incidence",
+    "dist_water",
+    "dw_built",
+    "dw_crops"
+  ],
+  "target": "lst",
+  "importance": {
+    "elev": 1.0443999767303467,
+    "ndvi": 1.0053000450134277,
+    "dw_bare": 0.7573000192642212,
+    "dw_crops": 0.3294999897480011,
+    "bld_frac": 0.1543000042438507,
+    "dist_water": 0.15029999613761902,
+    "slope": 0.13009999692440033,
+    "dw_built": 0.12129999697208405,
+    "cos_incidence": 0.09969999641180038
+  },
+  "min_rank_rho_vs_full": 0.8166666666666667,
+  "shap_method": "XGBoost native pred_contribs (path-dependent TreeSHAP)"
+}

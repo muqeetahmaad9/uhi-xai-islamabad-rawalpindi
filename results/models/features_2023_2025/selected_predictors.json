@@ -1,0 +1,39 @@
+{
+  "selected": [
+    "ndvi",
+    "bld_frac",
+    "dw_bare",
+    "elev",
+    "slope",
+    "cos_incidence",
+    "dist_water",
+    "dw_built",
+    "dw_crops"
+  ],
+  "target": "lst",
+  "corr_threshold": 0.8,
+  "vif_threshold": 5.0,
+  "n_train_cells": 241591,
+  "rho_with_target": {
+    "ndvi": -0.607,
+    "bld_frac": -0.254,
+    "dw_bare": 0.704,
+    "elev": -0.699,
+    "slope": -0.331,
+    "cos_incidence": 0.048,
+    "dist_water": -0.127,
+    "dw_built": -0.239,
+    "dw_crops": 0.51
+  },
+  "vif": {
+    "ndvi": 3.9,
+    "bld_frac": 1.67,
+    "dw_bare": 3.85,
+    "elev": 2.5,
+    "slope": 2.92,
+    "cos_incidence": 1.17,
+    "dist_water": 1.11,
+    "dw_built": 4.31,
+    "dw_crops": 2.72
+  }
+}

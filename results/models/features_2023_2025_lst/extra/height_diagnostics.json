@@ -1,0 +1,20 @@
+{
+  "rho_height_cover_all_cells": 0.9759427707516681,
+  "rho_height_cover_built_cells": 0.37188706298874613,
+  "built_cell_threshold_bld_frac": 0.05,
+  "n_built_cells": 67689,
+  "share_cells_zero_height": 0.6576266299298369,
+  "mean_abs_shap_built_cells_variantD": {
+    "ndvi": 0.8105999827384949,
+    "elev": 0.8032000064849854,
+    "dw_bare": 0.6790000200271606,
+    "dw_crops": 0.5055000185966492,
+    "bld_frac": 0.36730000376701355,
+    "bld_height": 0.2110999971628189,
+    "dw_built": 0.11100000143051147,
+    "dist_water": 0.09300000220537186,
+    "slope": 0.08540000021457672,
+    "cos_incidence": 0.04129999876022339
+  },
+  "height_rank_in_built_cells": 6
+}

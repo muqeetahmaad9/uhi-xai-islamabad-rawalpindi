@@ -1,0 +1,11 @@
+# large or regenerated files
+data/gee_exports/
+data/tables/
+data/boundary/geoBoundaries-*.geojson
+outputs/
+*.parquet
+*.tif
+*.joblib
+__pycache__/
+*.pyc
+.env

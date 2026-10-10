@@ -1,0 +1,10 @@
+,mean_abs_shap
+elev,1.0443792
+ndvi,1.0052726
+dw_bare,0.75731176
+dw_crops,0.3294708
+bld_frac,0.15433529
+dist_water,0.15030871
+slope,0.13012072
+dw_built,0.12130112
+cos_incidence,0.09971387

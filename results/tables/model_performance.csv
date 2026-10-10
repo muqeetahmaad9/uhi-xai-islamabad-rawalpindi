@@ -1,0 +1,5 @@
+model,test_R2,R2_CI,test_RMSE,RMSE_CI,test_MAE,bias,spatialCV_RMSE,randomCV_RMSE,random_understates_%,residual_MoransI
+Linear regression,0.708,0.63–0.75,1.708,1.42–2.08,1.317,-0.217,1.578,1.55,1.768,0.816
+Additive spline (GAM-type),0.789,0.72–0.82,1.451,1.26–1.71,1.118,-0.151,1.415,1.385,2.153,0.761
+Random Forest,0.834,0.77–0.86,1.29,1.17–1.44,0.993,-0.124,1.281,1.073,16.247,0.716
+XGBoost,0.834,0.77–0.86,1.287,1.18–1.43,0.993,-0.11,1.287,1.126,12.49,0.718

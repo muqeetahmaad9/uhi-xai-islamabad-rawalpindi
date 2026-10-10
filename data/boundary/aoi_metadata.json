@@ -1,0 +1,32 @@
+{
+  "source": "geoBoundaries gbOpen PAK ADM3",
+  "commit": "9469f09592ced973a3448cf66b6100b741b64c0d",
+  "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/PAK/ADM3/geoBoundaries-PAK-ADM3.geojson",
+  "license": "ODbL 1.0 (per geoBoundaries metadata for PAK ADM3)",
+  "simplify_tolerance_m": 10,
+  "dropped_slivers_m2": [
+    150.3
+  ],
+  "units": [
+    {
+      "shapeName": "ISLAMABAD",
+      "shapeID": "9618217B77065930061668",
+      "stratum": 1,
+      "area_km2": 905.6928963830202
+    },
+    {
+      "shapeName": "RAWALPINDI",
+      "shapeID": "9618217B34841225665801",
+      "stratum": 2,
+      "area_km2": 1616.6270952653388
+    }
+  ],
+  "union_area_km2": 2522.32,
+  "overlap_km2": -0.0,
+  "bounds_utm": [
+    279058.820046597,
+    3668825.747938252,
+    349155.29113627604,
+    3742443.5330231907
+  ]
+}
