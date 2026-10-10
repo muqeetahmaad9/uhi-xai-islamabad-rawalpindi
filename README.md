@@ -7,7 +7,7 @@ The workflow uses Google Earth Engine and Python to:
 - model LST with linear regression, an additive spline model, Random Forest and XGBoost under **spatial-block validation**;
 - explain the models with **TreeSHAP**, with stability and sensitivity tests.
 
-**Derived data** (90 m GeoTIFF stacks and analysis tables): Zenodo, DOI **[to be added]**.
+**Derived data** (90 m GeoTIFF stacks and analysis tables) are in `data/derived/` (described in `data/derived/README.md`) and archived with this repository on Zenodo.
 
 ## Repository structure
 
@@ -35,7 +35,7 @@ The workflow uses Google Earth Engine and Python to:
 | 8–10 | `08_`–`10_figures_*.py`: figures | no |
 | 11–13 | `11_extra_tests.py`, `12_yearly_stability.py`, `13_sensitivity_hills.py`: robustness | no |
 
-To skip the Earth Engine steps, download the derived data from Zenodo into `data/gee_exports/` and `data/tables/` and start at step 4.
+To skip the Earth Engine steps, copy `data/derived/gee_exports/` and `data/derived/tables/` to `data/gee_exports/` and `data/tables/` and start at step 4.
 
 ## Setup
 

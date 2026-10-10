@@ -1,0 +1,6 @@
+step,removed,remaining
+grid cells in export extent,0,657776
+outside AOI,344441,313335
+open water,1266,312069
+fewer than 3 clear Landsat observations,1,312068
+missing value in any band,0,312068
