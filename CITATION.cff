@@ -8,5 +8,6 @@ authors:
 version: 1.0.0
 date-released: 2026-10-10
 license: MIT
+doi: 10.5281/zenodo.23283293
 repository-code: "https://github.com/muqeetahmaad9/uhi-xai-islamabad-rawalpindi"
 keywords: [land surface temperature, urban heat island, SHAP, explainable AI, spatial cross-validation, Landsat, Google Earth Engine, Pakistan]
