@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Explainable machine learning of daytime land surface temperature in Islamabad–Rawalpindi, Pakistan (code)"
+title: "Explainable machine learning of land surface temperature and population heat exposure in Islamabad–Rawalpindi, Pakistan (code and derived data)"
 authors:
   - family-names: Ahmad
     given-names: Muqeet
     affiliation: "National Disaster Management Authority (NDMA), Islamabad, Pakistan"
-version: 1.0.0
-date-released: 2026-10-10
+version: 1.1.0
+date-released: 2026-10-12
 license: MIT
 doi: 10.5281/zenodo.23283293
 repository-code: "https://github.com/muqeetahmaad9/uhi-xai-islamabad-rawalpindi"
-keywords: [land surface temperature, urban heat island, SHAP, explainable AI, spatial cross-validation, Landsat, Google Earth Engine, Pakistan]
+keywords: [land surface temperature, urban heat island, night-time heat, population exposure, SHAP, explainable AI, spatial cross-validation, Landsat, Google Earth Engine, Pakistan]

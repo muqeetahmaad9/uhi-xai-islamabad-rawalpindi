@@ -1,8 +1,8 @@
 # Derived data: Islamabad–Rawalpindi pre-monsoon LST and predictors (90 m)
 
-Derived datasets for the study "Terrain and vegetation, not built-up land, control pre-monsoon daytime land surface temperature in Islamabad–Rawalpindi, Pakistan: a spatially validated explainable machine-learning analysis" (Muqeet Ahmad). Code: https://github.com/muqeetahmaad9/uhi-xai-islamabad-rawalpindi
+Derived datasets for the study "Cool by day, hot at night: drivers of land surface temperature and population heat exposure in Islamabad–Rawalpindi, Pakistan, from spatially validated explainable machine learning" (Muqeet Ahmad). Code: https://github.com/muqeetahmaad9/uhi-xai-islamabad-rawalpindi
 
-**Licence:** CC BY 4.0 for these derived products. Source data remain under their providers' licences (USGS Landsat, Copernicus Sentinel-2, Google Dynamic World/Open Buildings/Cloud Score+, ESA WorldCover, Copernicus DEM, JRC GSW, geoBoundaries ODbL 1.0).
+**Licence:** CC BY 4.0 for these derived products. Source data remain under their providers' licences (USGS Landsat, Copernicus Sentinel-2, Google Dynamic World/Open Buildings/Cloud Score+, ESA WorldCover, Copernicus DEM, JRC GSW, MODIS (NASA LP DAAC), GHS-POP (EC JRC, CC BY 4.0), WorldPop (CC BY 4.0), geoBoundaries ODbL 1.0).
 
 ## gee_exports/
 
@@ -53,3 +53,10 @@ Files: features_2023.tif, features_2024.tif, features_2025.tif and features_2023
 - features_<period>.parquet: one row per retained 90 m cell, with all bands above plus row, col, x, y (cell centre, EPSG:32643) and stratum_name. Open-water cells and cells with fewer than 3 clear observations are excluded.
 - features_2023_2025_splits.parquet: spatial block, split (train/test) and CV fold per cell (5 km blocks; seed 42).
 - *_exclusions.csv: counts removed at each filtering step.
+
+## gee_exports/context_2023_2025.tif (added in v1.1.0)
+
+Population and MODIS LST on the same 90 m grid as `features_2023_2025.tif` (EPSG:32643; float32; NoData −9999). Produced by `scripts/15_export_context.py`; metadata in `context_2023_2025_manifest.json`.
+- `pop_ghs2025`, `pop_wp2020`: persons per 90 m cell (GHS-POP R2023A epoch 2025; WorldPop 2020 Pakistan), by area-weighted aggregation of density.
+- `{mod,myd}_{day,night}_{pm,yr}`: mean MODIS LST v061 (°C) from Terra (`mod`, ~10:30/22:30) or Aqua (`myd`, ~13:30/01:30), for May–June (`pm`) or all months (`yr`) of 2023–2025. Quality: mandatory QA ≤ 1 and LST error ≤ 2 K. Values are the 1 km MODIS pixel value sampled to the 90 m grid by nearest neighbour (1 km support).
+- `n_<band>`: number of valid daily observations for the corresponding MODIS band (the paper excludes pixels with < 10).
