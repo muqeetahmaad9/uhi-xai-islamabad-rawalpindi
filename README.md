@@ -8,7 +8,7 @@ The workflow uses Google Earth Engine and Python to:
 - explain the models with **TreeSHAP**, with stability and sensitivity tests;
 - compare day and night surface UHI (MODIS Terra/Aqua) and assess population exposure (GHS-POP 2025, WorldPop 2020).
 
-**Derived data** (90 m GeoTIFF stacks and analysis tables) are in `data/derived/` (described in `data/derived/README.md`) and archived with this repository on Zenodo: [https://doi.org/10.5281/zenodo.23283294](https://doi.org/10.5281/zenodo.23283294) (all versions: 10.5281/zenodo.23283293).
+**Derived data** (90 m GeoTIFF stacks and analysis tables) are in `data/derived/` (described in `data/derived/README.md`) and archived with this repository on Zenodo: [https://doi.org/10.5281/zenodo.23321440](https://doi.org/10.5281/zenodo.23321440) (v1.1.0; v1.0.0: 10.5281/zenodo.23283294; all versions: 10.5281/zenodo.23283293).
 
 ## Repository structure
 
